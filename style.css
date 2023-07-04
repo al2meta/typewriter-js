@@ -1,0 +1,65 @@
+@font-face {
+	font-family: nineteenfourtytwo;
+	src: url(1942.ttf);
+}
+body, h1 {
+	font-family: nineteenfourtytwo, Courier New, Courier, monospace;
+}
+p {
+	font-family: nineteenfourtytwo, Courier New, Courier, monospace;
+	font-weight: bold;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: inline;
+	white-space: nowrap;
+}
+.blinking-cursor {
+	-webkit-animation: 1s blink step-end infinite;
+	-moz-animation: 1s blink step-end infinite;
+	-ms-animation: 1s blink step-end infinite;
+	-o-animation: 1s blink step-end infinite;
+	animation: 1s blink step-end infinite;
+}
+#type {
+	display: none;
+}
+@keyframes "blink" {
+	from, to {
+		color: transparent;
+	}
+	50% {
+		color: black;
+	}
+}
+@-moz-keyframes blink {
+	from, to {
+		color: transparent;
+	}
+	50% {
+		color: black;
+ 	}
+}
+@-webkit-keyframes "blink" {
+  	from, to {
+    	color: transparent;
+  	}
+  	50% {
+    	color: black;
+  	}
+}
+@-ms-keyframes "blink" {
+  	from, to {
+    	color: transparent;
+  	}
+  	50% {
+    	color: black;
+  	}
+}
+@-o-keyframes "blink" {
+  	from, to {
+    	color: transparent;
+  	}
+  	50% {
+    	color: black;
+  	}
+}
