@@ -1,20 +1,69 @@
-body {
-    background: #333;
+@font-face {
+	font-family: nineteenfourtytwo;
+	src: url(1942.ttf);
 }
-
-label {
-    color: #FFF;
-    display: block;
+body, h1 {
+	font-family: nineteenfourtytwo, Courier New, Courier, monospace;
 }
-
-.sunken_ship {
-    background:url('https://archive.org/download/5SecondsOfSilence/sunken_ship.gif') no-repeat;
+p {
+	font-family: nineteenfourtytwo, Courier New, Courier, monospace;
+	font-weight: bold;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: inline;
+	word-wrap: break-word;
 }
-
-.sea {
-    background:url('https://ia902603.us.archive.org/12/items/smrpgsea-bg/SMRPGSeaBG.png') no-repeat;
+.blinking-cursor {
+	-webkit-animation: 1s blink step-end infinite;
+	-moz-animation: 1s blink step-end infinite;
+	-ms-animation: 1s blink step-end infinite;
+	-o-animation: 1s blink step-end infinite;
+	animation: 1s blink step-end infinite;
 }
-
-.controls {
-    display: none;
+.context {
+	text-align: center;
+	margin: auto;
+}
+#type {
+	display: none;
+}
+@keyframes blink {
+	from, to {
+		color: transparent;
+	}
+	50% {
+		color: black;
+	}
+}
+@-moz-keyframes blink {
+	from, to {
+		color: transparent;
+	}
+	50% {
+		color: black;
+ 	}
+}
+@-webkit-keyframes blink {
+  	from, to {
+    	color: transparent;
+  	}
+  	50% {
+    	color: black;
+  	}
+}
+@-ms-keyframes blink {
+  	from, to {
+    	color: transparent;
+  	}
+  	50% {
+    	color: black;
+  	}
+}
+@-o-keyframes blink {
+  	from, to {
+    	color: transparent;
+  	}
+  	50% {
+    	color: black;
+  	}
 }
